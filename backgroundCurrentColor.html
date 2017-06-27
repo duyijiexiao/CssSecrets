@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背景色镂空技术与currentColor</title>
+	<style>
+		.icon {
+		    display: inline-block;
+		    width: 16px; height: 20px;
+		    background-image: url(img/sprite_icons.png);
+		    background-color: currentColor; /* 该颜色控制图标的颜色 */
+		}
+		.icon1 { background-position: 0 0; }
+		.icon2 { background-position: -20px 0; }
+		.icon3 { background-position: -40px 0; }
+		.icon4 { background-position: -60px 0; }
+		.link { margin-right: 15px; }
+		.link:hover { color: #333; }/* 虽然改变的是文字颜色，但是图标颜色也一起变化了 */
+	</style>
+</head>
+
+<body>
+	<a href="##" class="link"><i class="icon icon1"></i>返回</a>
+	<a href="##" class="link"><i class="icon icon2"></i>刷新</a>
+	<a href="##" class="link"><i class="icon icon3"></i>收藏</a>
+	<a href="##" class="link"><i class="icon icon4"></i>展开图片</a>
+	<p>此处是icon背景镂空,背景色需要与父级元素相同颜色，如背景色不同，则需要底色与背景色一致即可</p>
+</body>
+</html>

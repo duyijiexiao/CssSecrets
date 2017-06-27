@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>currentColor</title>
+</head>
+<body>
+<style>
+	.para{
+		color:red;
+	}
+	.paraHr{
+		background: currentColor;
+		height: 2px;
+	    border-width: 0px;
+	}
+	.para.blue{
+		color:blue;
+	}
+</style>
+	<div class="para">
+		<p >
+			这是一段文字，颜色是可以改变的
+			
+		</p>
+		<hr class="paraHr">
+	</div>
+	<div class="para blue">
+		<p >
+			这是一段文字，颜色是可以改变的
+			
+		</p>
+		<hr class="paraHr">
+	</div>
+</body>
+</html>
